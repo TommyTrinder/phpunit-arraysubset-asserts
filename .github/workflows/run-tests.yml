@@ -193,6 +193,11 @@ jobs:
           - php: 'nightly'
             phpunit: '11'
 
+          - php: '8.3'
+            phpunit: '12'
+          - php: '8.4'
+            phpunit: '12'
+
     name: "PHAR test: PHP ${{ matrix.php }} - PHPUnit: ${{matrix.phpunit}}"
 
     continue-on-error: ${{ matrix.php == '8.4' }}
